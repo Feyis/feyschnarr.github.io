@@ -18,10 +18,19 @@ li {
 }
 li a { 
 	display: block;
-	padding: 8px;
+	color: black;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: #FFDDB0;
+}
+.active {
+	background-color: #B6FAFA;
 }
 body{
-	background-color: paleturquoise;
+	background-color: #D4FFFF;
 }
 h1{
 	font-family: 'Cookie', cursive;
@@ -48,9 +57,9 @@ p{
 		<div id="header" class="section">
 			<h1> Fey's Website</h1>
 			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#ml">Machine Learning</a></li>
-				<li><a href="patterns">Patterns</a></li>
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a class="active" href="#ml">Machine Learning</a></li>
+				<li><a class="active" href="patterns">Patterns</a></li>
 			</ul>
 			<hr/>
 		</div>
