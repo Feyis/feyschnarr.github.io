@@ -1,118 +1,120 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Fey's Website</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-		<style>
+        <head>
+                <title>Fey's Website</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+                <style>
 .header{
-	background-color: #8b8284;
-	padding: 0;
-	text-align: center;
+        background-color: white;
+        padding: 0;
+        text-align: center;
 }
 
 h1{
         font-family: 'Cookie', cursive;
         text-align: center;
         font-size: 64px;
-	color: #f6d6c7;
+        color: #e49394;
 }
 
 ul{
-	border: 1px solid #f0e1ce;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #f6d6c7;
-}
-li {
-	float: left;
-	border-right: 1px solid #f0e1ce;
+        border: 1px solid #e0eae9;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
 }
 
-li a, .dropbtn { 
-	display: block;
-	color: #f6d6c7;
-	text-align: center;
-	padding: 14px;
-	font-family: Arial;
-	text-decoration: none;
+li {
+        float: left;
+        border-right: 1px solid #e0eae9;
+}
+
+li a, .dropbtn {
+        display: block;
+        color: #242123;
+        text-align: center;
+        padding: 14px;
+        font-family: Arial;
+        text-decoration: none;
 }
 li a:hover, .dropdown:hover .dropbtn{
-	background-color: #f6d6c7;
+        background-color: #e0eae9;
 }
 li.dropdown {
-	display: inline-block;
+        display: inline-block;
 }
+
 .dropdown-content{
-	display: none;
-	position: absolute;
-	background-color: #f0e1ce;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
 }
 .dropdown-content a{
-	color: #605859;
-	font-family: Arial;
-	padding: 12px 16px;
-	text-decoration:none;
-	display: block;
-	text-align: left;
+        color: #242123;
+        font-family: Arial;
+        padding: 12px 16px;
+        text-decoration:none;
+        display: block;
+        text-align: left;
 }
 .dropdown-content a:hover{
-	background-color: #f0e1ce;
+        background-color: #e0eae9;
 }
 .dropdown:hover .dropdown-content{
-	display: block;
+        display: block;
 }
 
 
 .active {
-	background-color: #e59394;
+        background-color: #e0eae9;
 }
 
 h2{
-	color: #605859;
-	font-family: Arial;
-	font-size: 32px;
+        color: #242123;
+        font-family: Arial;
+        font-size: 32px;
 }
 h3{
-	color: #8b8284;
-	font-family: Arial;
-	font-size: 24px;
+        color: #242123;
+        font-family: Arial;
+        font-size: 24px;
 
 }
 p{
-	font-family: Arial;
-	font-size: 16px;
-	color: #605859;
+        font-family: Arial;
+        font-size: 16px;
+        color: #242123;
 }
-		</style>	
-			
-	</head>
-	<body>
-		<div class="header">
-			<h1>Fey's Website</h1>
-			<ul>
-				<li><a class="active" href="/index">Home</a></li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn">Machine Learning</a>
-					<div class="dropdown-content">
-						<a href="/ml">Machine Learning</a>
-						<a href="#">Code editor</a>
-						<a href="#">Web Scraping</a>
-						<a href="#">Classification</a>
-						<a href="#">Natural Language Processing</a>
-					</div>
-				<li><a href="/patterns">Patterns</a></li>
-				<li style="float:right"><a href="/about">About me</a></li>
-			</ul>
-		</div>
-		<h3>It's a work in progress</h3>
-		<p>Please bear with me as I continue adding things to the website, this is just for practice!</p>
-	</body>
+                </style>
+
+        </head>
+        <body>
+                <div class="header">
+                        <h1>Fey's Website</h1>
+                        <ul>
+                                <li><a class="active" href="/index">Home</a></li>
+                                <li class="dropdown">
+                                        <a href="javascript:void(0)" class="dropbtn">Machine Learning</a>
+                                        <div class="dropdown-content">
+                                                <a href="/ml">Machine Learning</a>
+                                                <a href="#">Code editor</a>
+                                                <a href="#">Web Scraping</a>
+                                                <a href="#">Classification</a>
+                                                <a href="#">Natural Language Processing</a>
+                                        </div>
+                                <li><a href="/patterns">Patterns</a></li>
+                                <li style="float:right"><a href="/about">About me</a></li>
+                        </ul>
+                </div>
+                <h3>It's a work in progress</h3>
+                <p>Please bear with me as I continue adding things to the website, this is just for practice!</p>
+        </body>
 </html>
 
