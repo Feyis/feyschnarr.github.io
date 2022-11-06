@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
         <head>
-                <title>Fey's Website</title>
+                <meta charset="utf-8">
+                <title>Patterns</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
                 <style>
 .header{
         background-color: white;
-        padding: 0;
+        padding: 20px;
         text-align: center;
 }
 
@@ -18,7 +19,6 @@ h1{
         font-size: 64px;
         color: #e49394;
 }
-
 ul{
         border: 1px solid #e0eae9;
         list-style-type: none;
@@ -27,12 +27,10 @@ ul{
         overflow: hidden;
         background-color: white;
 }
-
 li {
         float: left;
         border-right: 1px solid #e0eae9;
 }
-
 li a, .dropbtn {
         display: block;
         color: #242123;
@@ -41,13 +39,12 @@ li a, .dropbtn {
         font-family: Arial;
         text-decoration: none;
 }
-li a:hover, .dropdown:hover .dropbtn{
+li a:hover, dropdown:hover .dropbtn{
         background-color: #e0eae9;
 }
-li.dropdown {
+li.dropdown{
         display: inline-block;
 }
-
 .dropdown-content{
         display: none;
         position: absolute;
@@ -60,7 +57,7 @@ li.dropdown {
         color: #242123;
         font-family: Arial;
         padding: 12px 16px;
-        text-decoration:none;
+        text-decoration: none;
         display: block;
         text-align: left;
 }
@@ -71,51 +68,39 @@ li.dropdown {
         display: block;
 }
 
-
 .active {
         background-color: #9dc1bb;
 }
 
-h2{
-        color: #242123;
-        font-family: Arial;
-        font-size: 32px;
-}
-h3{
-        color: #242123;
-        font-family: Arial;
-        font-size: 24px;
-
-}
 p{
         font-family: Arial;
-        font-size: 16px;
         color: #242123;
 }
                 </style>
 
         </head>
+
         <body>
                 <div class="header">
-			<h1>Fey's Website</h1>
+                        <h1>Fey's Website</h1>
                         <ul>
-                                <li><a class="active" href="/index">Home</a></li>
+                                <li><a href="..">Home</a></li>
                                 <li class="dropdown">
-                                        <a href="ml" class="dropbtn">Machine Learning</a>
+                                        <a href="../ml" class="dropbtn">Machine Learning</a>
                                         <div class="dropdown-content">
-                                                <a href="#">Code editor</a>
+                                                <a href="#">Code Editor</a>
                                                 <a href="#">Web Scraping</a>
                                                 <a href="#">Classification</a>
                                                 <a href="#">Natural Language Processing</a>
                                         </div>
-				</li>
-				<li><a href="/math">Math</a></li>
-                                <li><a href="/patterns">Patterns</a></li>
-                                <li style="float:right"><a href="/about">About me</a></li>
+                                </li>
+				<li><a class="active" href="math">Math</a></li>
+                                <li><a href="../patterns">Patterns</a></li>
+                                <li style="float:right"><a href="../about">About me</a></li>
                         </ul>
+
                 </div>
-                <h3>It's a work in progress</h3>
-                <p>Please bear with me as I continue adding things to the website, this is just for practice!</p>
+                        <p>This is where I'm going to put my math stuff.</p>
+
         </body>
 </html>
-
