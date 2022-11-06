@@ -5,7 +5,36 @@
                 <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-                <style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+.column {
+	float: left;
+	padding: 10px;
+}
+.column.side {
+	width: 25%;
+}
+.column.middle{
+	width: 50%;
+}
+.row:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width:600px){
+	.column.side, .column.middle{
+		width:100%;
+	}
+}
+	
 .header{
         background-color: white;
         padding: 0;
@@ -114,8 +143,20 @@ p{
                                 <li style="float:right"><a href="/about">About me</a></li>
                         </ul>
                 </div>
-                <h3>It's a work in progress</h3>
-                <p>Please bear with me as I continue adding things to the website, this is just for practice!</p>
+		<div class="row">
+			<div class="column side">
+				<h3>Some stuff over here</h3>
+				<p>The sides aren't terribly exciting yet</p>
+			</div>
+			<div class="column middle">
+				<h2>It's a work in progress!</h2>
+				<p>I'm learning how to make a website by making a website. Please bear with me as I continue adding things!</p>
+			</div>
+			<div class="column side">
+				<h3>Some other stuff here</h3>
+				<p>This side is also a thing</p>
+			</div>
+		</div>
         </body>
 </html>
 
