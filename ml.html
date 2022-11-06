@@ -6,7 +6,36 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-                <style>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+* {
+        box-sizing: border-box;
+}
+
+body {
+        margin: 0;
+}
+.column {
+        float: left;
+        padding: 10px;
+}
+.column.side {
+        width: 25%;
+}
+.column.middle{
+        width: 50%;
+}
+.row:after{
+        content:"";
+        display: table;
+        clear: both;
+}
+@media screen and (max-width:600px){
+        .column.side, .column.middle{
+                width:100%;
+        }
+}
+
 .header{
         background-color: white;
         padding: 0px;
@@ -99,7 +128,20 @@ p{
                         </ul>
 
 		</div>
-			<p>This is where I'm going to put my machine learning projects and code explanations.</p>
-		
+		<div class="row">
+                        <div class="column side">
+                                <h3>Some stuff over here</h3>
+                                <p>Maybe like a list of links to different ml projects of mine? Haven't decided yet. </p>
+                        </div>
+                        <div class="column middle">
+                                <h2>Main content</h2>
+                                <p>My machine learning knowledge and experience and stuff that I've worked on.</p>
+                        </div>
+                        <div class="column side">
+                                <h3>Some other stuff here</h3>
+                                <p>This side is also a thing</p>
+                        </div>
+                </div>
+	
 	</body>
 </html>
