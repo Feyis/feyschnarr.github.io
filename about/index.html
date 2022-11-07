@@ -6,7 +6,37 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sacramento&display=swap" rel="stylesheet">
-                <style>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+* {
+        box-sizing: border-box;
+}
+
+body {
+        margin: 0;
+}
+.column {
+        float: left;
+        padding: 10px;
+}
+.column.middle{
+        width: 75%;
+}
+.column.side {
+        width: 25%
+}
+.row:after{
+        content:"";
+        display: table;
+        clear: both;
+}
+@media screen and (max-width:600px){
+        .column.side, .column.middle{
+                width:100%;
+        }
+}
+
+
 .header{
         background-color: white;
         padding: 0px;
@@ -88,10 +118,10 @@ p{
 				<li class="dropdown">
 					<a href="../ml" class="dropbtn">Machine Learning</a>
 					<div class="dropdown-content">
-                                                <a href="#">Code editor</a>
-                                                <a href="#">Web Scraping</a>
-                                                <a href="#">Classification</a>
-                                                <a href="#">Natural Language Processing</a>
+                                                <a href="../ml/code-editor">Code editor</a>
+                                                <a href="../ml/web-scraping">Web Scraping</a>
+                                                <a href="../ml/classification">Classification</a>
+                                                <a href="../ml/nlp">Natural Language Processing</a>
                                         </div>
 				</li>
 				<li><a href="../math">Math</a></li>
@@ -100,7 +130,10 @@ p{
                         </ul>
 
                 </div>
-                        <p>Hello! This is where I'm going to put information about me.</p>
+		<div class="column middle">
+			<h2>About me</h2>
+                        <p>Hello! My name is Ivey Schnarr, but I go by Fey. I recently graduated from Colorado State University with a B.S. in Mathematics and a minor in Machine Learning.</p>
+		</div>
 
         </body>
 </html>
