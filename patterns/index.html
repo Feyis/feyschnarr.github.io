@@ -135,6 +135,22 @@ p{
                         </ul>
 
                 </div>
+		<?php
+							   $servername="localhost"
+							   $username="root"
+							   $password="root"
+							   $dbname="crafts"
+
+							   $conn=new mysqli($servername,$username,$password,$dbname);
+
+							   $result = $conn->query($sql);
+							   if(!$result){
+							   	echo $conn->error;
+								exit;
+							   }
+
+		?>
+
 		
 		<div class="column middle">
 			<h2>Patterns</h2>
