@@ -12,6 +12,39 @@
         box-sizing: border-box;
 }
 
+#myInput {
+	background-image: url('css/searchicon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	font-family: Arial;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #e0eae9;
+	margin-bottom: 12px;
+}
+
+#myTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #e0eae9;
+	font-size: 18px;
+	font-family: Arial;
+}
+
+#myTable th, #myTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+#myTable tr {
+	border-bottom: 1px solid #e0eae9;
+}
+
+#myTable tr.header, #myTable tr:hover{
+	background-color: #e0eae9;
+}
+
 body {
         margin: 0;
 }
@@ -23,7 +56,7 @@ body {
         width: 75%;
 }
 .column.side {
-        width: 25%
+        width: 25%;
 }
 .row:after{
         content:"";
@@ -135,26 +168,49 @@ p{
                         </ul>
 
                 </div>
-		<?php
-							   $servername="localhost"
-							   $username="root"
-							   $password="root"
-							   $dbname="crafts"
-
-							   $conn=new mysqli($servername,$username,$password,$dbname);
-
-							   $result = $conn->query($sql);
-							   if(!$result){
-							   	echo $conn->error;
-								exit;
-							   }
-
-		?>
+		
 
 		
 		<div class="column middle">
 			<h2>Patterns</h2>
-                        <p>This is where I'm going to put my knitting pattern database (once I figure out how to do it).</p>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for patterns.." title="Type something">
+			<table id="myTable">
+				<tr class="header">
+					<th style="width:20%;">Pattern Name</th>
+					<th style="width:20%;">Pattern Type</th>
+					<th style="width:20%;">Yarn Gauge</th>
+					<th style="width:20%;">Yarn Amount</th>
+					<th style="width:20%;">Image</th>
+				</tr>
+				<tr>
+					<td><a href="../crown-prince">Crown Prince Shawl</a></td>
+					<td>Shawl</td>
+					<td>0 Thread</td>
+					<td>2,750 yds</td>
+					<td></td>
+				</tr>
+			</table>
+
+			<script>
+				function myFunction(){
+									var input, filter, table, tr, td, i, txtValue;
+									input = document.getElementById("myInput");
+									filter = input.value.toUpperCase();
+									table = document.getElementById("myTable);
+									tr = table.getElementsByTagName("tr");
+									for(i = 0; i<tr.length; i++){
+														td = tr[i].getElementsByTagName("td")[0];
+														if (td){
+																			txtValue = td.textContent || td.innerText;
+																			if (txtValue.toUpperCase().indexOf(filter)>1){
+																								tr[i].style.display = "";
+																			} else{
+																								tr[i].style.display = "none";
+																			}
+														}
+									}
+				}
+			</script>
 		</div>
 
         </body>
