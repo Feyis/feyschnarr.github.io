@@ -1,45 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fey Schnarr</title>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&display=swap');
+:root{
+        --bkg-color-primary: #e3f2ff;
+        --txt-color-primary: #4b5054;
+        --bkg-color-secondary: #dbd8d8;
+        --txt-color-secondary: #ffffff;
+}
+*{
+        box-sizing: border-box;
+}
+body{
+        margin: 0 auto;
+        padding: 40px;
+        height: 100vh;
+        background-color: var(--bkg-color-primary);
+}
+
+.container{
+        display: flex;
+        justify-content: center;
+}
+.card{
+
+}
+
+.text-container{
+        padding: 4vw;
+}
+.img-container{
+        padding: 4vw;
+}
+img{
+        width: 100%;
+        height: auto;
+}
+
+/*columns for containers */
+.column-container{
+        display: flex;
+        width: 100%;
+}
+.column-left{
+        width: 50%;
+}
+.column-right{
+        width: 50%;
+}
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+.footer{
+        background-color: var(--bkg-color-secondary);
+        padding: 10 px;
+}
+h1{
+        font-family: 'Poiret One', cursive;
+        font-size: 72px;
+}
+h2{
+        font-family: 'Poiret One', cursive;
+        font-size: 48px;
+}
+h3{
+        font-family: 'Poiret One', cursive;
+        font-size: 36px;
+}
+h4{
+        font-family: 'IBM Plex Serif', serif;
+        font-size: 15px;
+        font-weight: bold;
+}
+p{
+        font-family: 'IBM Plex Serif', serif;
+        font-size: 15px;
+}
+@media screen and (max-width: 600px){
+        .column-container{
+                flex-direction: column;
+        }
+        .column-left{
+                order: 2;
+        }
+        .column-right{
+                order: 1;
+        }
+}
+</style>
+</head>
+
 <body>
-    <div class="header">
-        <ul>
-            <li style="float:left">
-                <a target="_blank" href=".">
-                    <img src="profile_icon.png" alt="Home" style="width:32px">
-                </a>
-            </li>
-            <li style="float:left"><a href=".">Fey Schnarr</a></li>
-            <li><a href="./contact">Contact</a></li>
-            <li class="dropdown"><a href="./projects" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="./projects/completed-projects">Completed Projects</a>
-                    <a href="./projects/works-in-progress">Works in Progress</a>
+        <div class="container">
+                <div class="row">
+                        <div class="column-container">
+                                <div class="column-left">
+                                        <div class="img-container">
+                                                <img src="profile_photo2.jpg">
+                                        </div>
+                                </div>
+
+                                <div class="column-right">
+                                        <div class="text-container">
+                                                <h1>Fey Schnarr</h1>
+                                                <h4>IT Support and Design</h4>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
-            </li>
-            <li><a href="./about">About</a></li>
-            <li><a href=".">Home</a></li>
-        </ul>
-    </div>
-    <div class="header-container">
-        <div class="header-title-container">
-            <h1>Hi, I'm Fey Schnarr</h1>
         </div>
-        <div class="header-info-container">
-            <p>Mathematician, machine learning enthusiast, and programmer. Adept at solving puzzles and finding creative solutions.</p>
+        <div class="container">
+                <p>Some text to make sure things are aligned properly</p>
         </div>
-    </div>
-    <div class="header-round-info-container">
-        <div class="header-link-container">
-            <h2><a href = "/projects">Projects</a></h2>
-        </div>
-    </div>
-    
 </body>
 </html>
